@@ -1,0 +1,13 @@
+{
+"builds":[{
+    "src":"hianatra_code/wsgi.py",
+    "use":"@vercel/python",
+    "config":{"maxlamdasize":"15mb","runtime":"python3.11.9"}
+}],
+"routes":[
+    {
+        "src":"/(.*)",
+        "dest":"hianatra_code/wsgi.py"
+    }
+]
+}
